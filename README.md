@@ -3,9 +3,9 @@
 This is an Pepsi landing page
 
 Build using: 
-1.HTML
-2.CSS
-3.Javascript
+1.HTML <br>
+2.CSS <br>
+3.Javascript <br>
 
 ![2023-07-13 (3)](https://github.com/ravi-singh-100/Pepsi-landing-page/assets/84458346/c2856735-75b9-4ca5-9c6b-509df4619206)
 
