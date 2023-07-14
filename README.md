@@ -2,7 +2,7 @@
 
 This is an Pepsi landing page
 
-Build using: 
+Build using: <br>
 1.HTML <br>
 2.CSS <br>
 3.Javascript <br>
