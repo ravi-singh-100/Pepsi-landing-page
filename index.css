@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+#home{
+    background-color: #0043ffe0;
+}
+
+/* NAVIGATION BAR  */
+.outer_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 91%;
+    margin: 0.5rem 0;
+}
+
+nav.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+nav.navbar ul li {
+    text-decoration: none;
+    margin: 0 2rem;
+ 
+}
+
+nav.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+nav.navbar ul li a:hover{
+    color: black;
+    background: #faf9f985;
+}
+div.hamburger_icon{
+    display: none;
+    
+}
+/* MIDDLE CONTENT  */
+section.middle_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.content{
+width: 58%;
+color: white;
+}
+.content h2{
+    font-size: 4rem;
+text-transform: uppercase;
+}
+.content h1{
+    font-size: 5.5rem;
+text-transform: uppercase;
+}
+.content p{
+    font-size: 1.1rem;
+}
+button.view_more{
+    background: #faf9f985;
+margin-top: 1rem;
+padding: 0.5rem 0.9rem;
+border: none;
+border-radius: 28px;
+}
+button.view_more a{
+    text-decoration: none;
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+   
+}
+
+img.pepsi{
+box-shadow: 0px 29px 19px -20px black;
+   border-bottom-left-radius: 71px;
+border-bottom-right-radius: 71px;
+width: 80%;
+animation: pepsi_move_1 1s ease-out 1;
+
+}
+@keyframes pepsi_move_1 {
+    0%{
+        transform: translateY(-25px);
+        box-shadow: none;
+      
+    
+    }
+    100%{
+        transform: translateY(0px);
+        
+        box-shadow: 0px 29px 19px -20px black;
+    }
+}
+/* @keyframes pepsi_move_2 {
+    0%{
+        transform: translateY(-25px);
+        box-shadow: none;
+      
+    
+    }
+    100%{
+        transform: translateY(0px);
+        
+        box-shadow: 0px 29px 19px -20px black;
+    }
+}  */
+
+.social_media{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.facebook,.twitter,.instagram{
+   margin: 1rem 1rem;
+   filter: invert(1);
+}
+/* FOOTER  */
+footer.change{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 2rem 0 0 0;
+padding: 1rem 0;
+}
+.small_blue_pepsi,.small_silver_pepsi,.small_black_pepsi{
+   width: 5%;
+   margin: 0 2rem;
+}
+.small_blue_pepsi:hover,.small_silver_pepsi:hover,.small_black_pepsi:hover{
+   transform: translateY(-13px);
+}
+/* CSS FOR HAMBURDER ICON  */
+
+    
+@media only screen and (max-width:1007px) {
+   /* NAVIGATION BAR  */
+   nav.navbar ul {
+       display: none;
+       /* position: relative;
+top: 64px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; */
+   }
+   div.hamburger_icon{
+    display: inline-block;
+    filter: invert(1);
+    font-size: 2.5rem;
+}
+/* .navbar_hidden{
+    display: none;
+} */
+    /* MIDDLE CONTENT  */
+
+    section.middle_container{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .content h2{
+        font-size: 2rem;
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+    .content p{
+        font-size: 1rem;
+    }
+    .text_align_center{
+    text-align: center;
+    }
+    img.pepsi{
+        margin: 2rem 0;
+        margin-left: 1rem;
+    }
+.social_media{
+flex-direction: row;
+}
+/* FOOTER  */
+.small_blue_pepsi,.small_silver_pepsi,.small_black_pepsi{
+width: 10%;
+
+}
+}
+@media only screen and (max-width:453px) {
+   /* NAVIGATION BAR  */
+   div.hamburger_icon{
+       font-size: 2rem;
+   }
+   /* MIDDLE CONTAINER  */
+.content h2{
+        font-size: 1.5rem;
+    }
+    .content h1{
+        font-size: 2.5rem;
+    }
+    img.pepsi{
+        margin-left: 2rem;
+    }
+    /* FOOTER  */
+    .small_blue_pepsi,.small_silver_pepsi,.small_black_pepsi{
+        width: 14%;
+        margin-bottom: 1rem;
+    }
+}
